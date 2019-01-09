@@ -61,6 +61,7 @@ footer {
     border: 0.5px solid white;
     padding: 0 15px;
     margin: 0 20px;
+    height: 100%;
 }
 
 .cont1 {
@@ -71,16 +72,8 @@ footer {
     margin-left: auto;
 }
 
-#message {
-    padding-top: 5px;
-}
-
 #message img {
     width: 8vw;
-}
-
-#vk-group {
-    padding-bottom: 17px;
 }
 
 #vk-group a, #vk-group p {
@@ -94,4 +87,8 @@ footer {
 ::selection {
     color: white;
     background-color: lightgreen;
+}
+
+#message, #TimeWork {
+    line-height: 1;
 }
