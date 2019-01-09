@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    text-align: center;
+    background: rgb(43, 42, 40);
+}
+
+p {
+    text-align: left;
+    color: white;
+    font-size: 1.2vw;
+}
+
+#Geek {
+    margin-top: -5px;
+    width: 80%;
+}
+
+#Work {
+    margin-top: -0.8em;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#Price {
+    margin: 0 auto;
+    margin-top: -2%;
+    text-align: center;
+}
+
+#Price p {
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#Price a {
+    font-size: 1.5vw;
+    padding: 7px;
+    border: 0.5px solid white;
+    border-radius: 20px;
+}
+
+footer {
+    margin-top: -5px;
+    font-size: 15px;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    line-height: 0.5;
+}
+
+#Adres, #TimeWork, #message, #vk-group {
+    vertical-align: top;
+    display: inline-block;
+    border: 0.5px solid white;
+    padding: 0 15px;
+    margin: 0 20px;
+}
+
+.cont1 {
+    margin-right: auto;
+}
+
+.cont2 {
+    margin-left: auto;
+}
+
+#message {
+    padding-top: 5px;
+}
+
+#message img {
+    width: 8vw;
+}
+
+#vk-group {
+    padding-bottom: 17px;
+}
+
+#vk-group a, #vk-group p {
+    font-size: 1.4vw;
+}
+
+#vk-group img {
+    width: 20%;
+}
+
+::selection {
+    color: white;
+    background-color: lightgreen;
+}
