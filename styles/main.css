@@ -100,13 +100,14 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .mobwork {
-        display: block;
-        width: 80%;
-    }
+    #Geek { 
+    margin-top: 0; 
+    width: 100%; 
+    } 
 
-    #Geek {
-        display: none;
+    .mobwork { 
+    display: block; 
+    width: 80%; 
     }
     
     #Work {
