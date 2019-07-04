@@ -1,138 +1,639 @@
+* {
+  transition: all 0.5s ease;
+}
+
 body {
-    margin: 0;
-    text-align: center;
-    background: rgb(43, 42, 40);
+  margin: 0;
+  text-align: center;
+  background: rgb(43, 42, 40);
 }
 
 p {
-    text-align: left;
-    color: white;
-    font-size: 1.2vw;
+  text-align: left;
+  color: white;
+  font-size: 1.2vw;
+}
+
+.SYs p {
+  text-align: center;
+  font-size: 50px;
+}
+
+.nav {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  position: relative;
 }
 
 #Geek {
-    margin-top: -5px;
-    width: 80%;
+  width: 200px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
+.label {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  font-size: 20px;
+  color: #777;
+  padding: 0 10px;
+}
+
+/* Цвет выбранного меню */
+#Glav:checked ~ div .LGlav {
+  color: lightgreen;
+}
+
+#Tovar:checked ~ div .LTov {
+  color: lightgreen;
+}
+
+#Yslugi:checked ~ div .LYs {
+  color: lightgreen;
+}
+
+/* Сокрытие меню */
+.SGlav, .STov, .SYs {
+  padding-top: 100px;
+  display: none;
+}
+
+/* Появление выбранного меню */
+#Glav:checked ~ .SGlav {
+  display: block;
+}
+
+#Tovar:checked ~ .STov {
+  display: block;
+}
+
+#Yslugi:checked ~ .SYs {
+  display: block;
+}
+
+/* Работы с инфоблоками */
 #Work {
-    margin-top: -0.8em;
-    width: 80%;
+  width: 100%;
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
-#Price {
-    margin: 0 auto;
-    margin-top: -1.7%;
-    text-align: center;
+/* Товары */
+.TCont {
+  padding: 0 10px;
+  border-radius: 20px;
 }
 
-#Price p {
-    font-size: 1.5vw;
-    text-align: center;
-    margin-bottom: 10px;
+/* Чехлы */
+.Case {
+  width: 452px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 0 31px 0 rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
 }
 
-#Price a {
-    font-size: 1.5vw;
-    padding: 7px;
-    border: 0.5px solid white;
-    border-radius: 20px;
+.Icont {
+  display: flex;
+  overflow: hidden;
 }
 
+.Case h1 {
+  color: lightgray;
+  padding-left: 20px;
+}
+
+.Icont > img {
+  width: 452px;
+  margin-bottom: -10px;
+  float: left;
+}
+
+/* Слайдер чехлов*/
+#red:checked ~ .Icont .Ir {
+  margin-left: 0;
+}
+
+#black:checked ~ .Icont .Ir {
+  margin-left: -100%;
+}
+
+#white:checked ~ .Icont .Ir {
+  margin-left: -200%;
+}
+
+#Tblue:checked ~ .Icont .Ir {
+  margin-left: -300%;
+}
+
+#Psand:checked ~ .Icont .Ir {
+  margin-left: -400%;
+}
+
+#Bezeviy:checked ~ .Icont .Ir {
+  margin-left: -500%;
+}
+
+#Mgorizont:checked ~ .Icont .Ir {
+  margin-left: -600%;
+}
+
+#Tlavanda:checked ~ .Icont .Ir {
+  margin-left: -700%;
+}
+
+#Snecktarin:checked ~ .Icont .Ir {
+  margin-left: -800%;
+}
+
+#Tocean:checked ~ .Icont .Ir {
+  margin-left: -900%;
+}
+
+#Limon:checked ~ .Icont .Ir {
+  margin-left: -1000%;
+}
+
+#Rkarkade:checked ~ .Icont .Ir {
+  margin-left: -1100%;
+}
+
+#Nmiata:checked ~ .Icont .Ir {
+  margin-left: -1200%;
+}
+
+#Spapai:checked ~ .Icont .Ir {
+  margin-left: -1300%;
+}
+
+#Gblue:checked ~ .Icont .Ir {
+  margin-left: -1400%;
+}
+
+#Kanar:checked ~ .Icont .Ir {
+  margin-left: -1500%;
+}
+
+#Tfyks:checked ~ .Icont .Ir {
+  margin-left: -1600%;
+}
+
+#Bsymerk:checked ~ .Icont .Ir {
+  margin-left: -1700%;
+}
+
+/* Цвета */
+.Lcont {
+  padding: 10px 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Block {
+  padding: 10px 0;
+}
+
+.CColor {
+  margin-right: 10px;
+  padding: 5px 15px;
+  box-shadow: inset 0 0 7px -1px rgba(0, 0, 0, 0.5);
+  opacity: 0.4;
+}
+
+.Red {
+  border-radius: 50px;
+  background-color: rgb(202, 69, 74);
+}
+
+.Black {
+  border-radius: 50px;
+  background-color: rgb(67, 68, 70);
+}
+
+.White {
+  border-radius: 50px;
+  background-color: rgb(246, 245, 243);
+}
+
+.Tblue {
+  border-radius: 50px;
+  background-color: rgb(65, 73, 92);
+}
+
+.Psand {
+  border-radius: 50px;
+  background-color: rgb(240, 213, 202);
+}
+
+.Bezev {
+  border-radius: 50px;
+  background-color: rgb(216, 206, 194);
+}
+
+.Mgor {
+  border-radius: 50px;
+  background-color: rgb(45, 80, 112);
+}
+
+.Tlavan {
+  border-radius: 50px;
+  background-color: rgb(140, 143, 160);
+}
+
+.Snectar {
+  border-radius: 50px;
+  background-color: rgb(247, 117, 101);
+}
+
+.Tocean {
+  border-radius: 50px;
+  background-color: rgb(55, 77, 91);
+}
+
+.Limon {
+  border-radius: 50px;
+  background-color: rgb(253, 243, 190);
+}
+
+.Rkarkad {
+  border-radius: 50px;
+  background-color: rgb(218, 91, 112);
+}
+
+.Nmiata {
+  border-radius: 50px;
+  background-color: rgb(135, 211, 162);
+}
+
+.Spapai {
+  border-radius: 50px;
+  background-color: rgb(251, 156, 110);
+}
+
+.Gblue {
+  border-radius: 50px;
+  background-color: rgb(82, 106, 150);
+}
+
+.Kanar {
+  border-radius: 50px;
+  background-color: rgb(248, 215, 108);
+}
+
+.Tfyks {
+  border-radius: 50px;
+  background-color: rgb(217, 83, 134);
+}
+
+.Bsymerk {
+  border-radius: 50px;
+  background-color: rgb(162, 168, 194);
+}
+
+/* Выбранный цвет чехла */
+#red:checked ~ .Lcont .Red {
+  opacity: 1;
+  cursor: default;
+}
+
+#black:checked ~ .Lcont .Black {
+  opacity: 1;
+  cursor: default;
+}
+
+#white:checked ~ .Lcont .White {
+  opacity: 1;
+  cursor: default;
+}
+
+#Tblue:checked ~ .Lcont .Tblue {
+  opacity: 1;
+  cursor: default;
+}
+
+#Psand:checked ~ .Lcont .Psand {
+  opacity: 1;
+  cursor: default;
+}
+
+#Bezeviy:checked ~ .Lcont .Bezev {
+  opacity: 1;
+  cursor: default;
+}
+
+#Mgorizont:checked ~ .Lcont .Mgor {
+  opacity: 1;
+  cursor: default;
+}
+
+#Tlavanda:checked ~ .Lcont .Tlavan {
+  opacity: 1;
+  cursor: default;
+}
+
+#Snecktarin:checked ~ .Lcont .Snectar {
+  opacity: 1;
+  cursor: default;
+}
+
+#Tocean:checked ~ .Lcont .Tocean {
+  opacity: 1;
+  cursor: default;
+}
+
+#Limon:checked ~ .Lcont .Limon {
+  opacity: 1;
+  cursor: default;
+}
+
+#Rkarkade:checked ~ .Lcont .Rkarkad {
+  opacity: 1;
+  cursor: default;
+}
+
+#Nmiata:checked ~ .Lcont .Nmiata {
+  opacity: 1;
+  cursor: default;
+}
+
+#Spapai:checked ~ .Lcont .Spapai {
+  opacity: 1;
+  cursor: default;
+}
+
+#Gblue:checked ~ .Lcont .Gblue {
+  opacity: 1;
+  cursor: default;
+}
+
+#Kanar:checked ~ .Lcont .Kanar {
+  opacity: 1;
+  cursor: default;
+}
+
+#Tfyks:checked ~ .Lcont .Tfyks {
+  opacity: 1;
+  cursor: default;
+}
+
+#Bsymerk:checked ~ .Lcont .Bsymerk {
+  opacity: 1;
+  cursor: default;
+}
+
+/* Цена чехлов */
+.CPrice {
+  max-width: 49%;
+  width: 100%;
+  padding: 0;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+.Model, .Color-Vol {
+  font-size: 16px;
+  color: lightgray;
+}
+
+.Vers {
+  display: inline;
+  font-size: 16px;
+  color: lightgray;
+}
+
+.CPcont {
+  display: flex;
+  align-items: baseline;
+}
+
+.CPMoney {
+  padding-top: 15px;
+  color: lightgray;
+}
+
+.Cmoney, .CPColor {
+  display: none;
+  color: lightgray;
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+#SE-8:checked ~ div .SE-8 {
+  display: inline-block;
+}
+
+#SE-8:checked ~ div .VSE {
+  color: lightgreen;
+}
+
+#X-XS:checked ~ div .X-XS {
+  display: inline-block;
+}
+
+#X-XS:checked ~ div .VX {
+  color: lightgreen;
+}
+
+/* Отображение выбранного цвета */
+.CPcolor-cont {
+  padding-bottom: 10px;
+}
+
+#red:checked ~ .Lcont .CRed {
+  display: inline-block;
+}
+
+#black:checked ~ .Lcont .CBlack {
+  display: inline-block;
+}
+
+#white:checked ~ .Lcont .CWhite {
+  display: inline-block;
+}
+
+#Tblue:checked ~ .Lcont .CTblue {
+  display: inline-block;
+}
+
+#Psand:checked ~ .Lcont .CPsand {
+  display: inline-block;
+}
+
+#Bezeviy:checked ~ .Lcont .CBezeviy {
+  display: inline-block;
+}
+
+#Mgorizont:checked ~ .Lcont .CMgorizont {
+  display: inline-block;
+}
+
+#Tlavanda:checked ~ .Lcont .CTlavanda {
+  display: inline-block;
+}
+
+#Snecktarin:checked ~ .Lcont .CSnecktarin {
+  display: inline-block;
+}
+
+#Tocean:checked ~ .Lcont .CTocean {
+  display: inline-block;
+}
+
+#Limon:checked ~ .Lcont .CLimon {
+  display: inline-block;
+}
+
+#Rkarkade:checked ~ .Lcont .CRkarkade {
+  display: inline-block;
+}
+
+#Nmiata:checked ~ .Lcont .CNmiata {
+  display: inline-block;
+}
+
+#Spapai:checked ~ .Lcont .CSpapai {
+  display: inline-block;
+}
+
+#Gblue:checked ~ .Lcont .CGblue {
+  display: inline-block;
+}
+
+#Kanar:checked ~ .Lcont .CKanar {
+  display: inline-block;
+}
+
+#Tfyks:checked ~ .Lcont .CTfyks {
+  display: inline-block;
+}
+
+#Bsymerk:checked ~ .Lcont .CBsymerk {
+  display: inline-block;
+}
+
+/* Подвал */
 footer {
-    margin-top: -5px;
-    font-size: 15px;
-    color: white;
-    text-align: left;
-    display: flex;
-    justify-content: center;
-    line-height: 0.5;
+  padding-top: 100px;
+  font-size: 15px;
+  color: white;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  line-height: 0.5;
 }
 
 #Adres, #TimeWork, #message, #vk-group {
-    vertical-align: top;
-    display: inline-block;
-    border: 0.5px solid white;
-    padding: 0 15px;
-    margin: 0 20px;
-    height: 100%;
-    margin-bottom: -7px;
+  vertical-align: top;
+  display: inline-block;
+  border: 0.5px solid white;
+  padding: 0 15px;
+  margin: 0 20px;
+  height: 100%;
+  margin-bottom: -7px;
 }
 
 .cont1 {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .cont2 {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 #message img {
-    padding-top: 10px;
-    width: 8vw;
+  padding-top: 10px;
+  width: 8vw;
 }
 
 #vk-group a, #vk-group p {
-    font-size: 1.4vw;
+  font-size: 1.4vw;
 }
 
 #vk-group img {
-    width: 20%;
+  width: 20%;
 }
 
 ::selection {
-    color: white;
-    background-color: lightgreen;
+  color: white;
+  background-color: lightgreen;
 }
 
 #message, #TimeWork {
-    line-height: 1;
+  line-height: 1;
 }
 
 .mobwork {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
-    #Geek { 
-    margin-top: 0; 
-    width: 100%; 
-    } 
+  #Geek {
+    margin-top: 0;
+    width: 100%;
+  }
 
-    .mobwork { 
-    display: block; 
-    width: 80%; 
-    }
-    
-    #Work {
-        display: none;
-    }
+  .mobwork {
+    display: block;
+    width: 80%;
+  }
 
-    #Price {
-        margin: 0 auto 10px auto;
-        margin-top: -3%;
-    }
+  #Work {
+    display: none;
+  }
 
-    #Price p {
-        font-size: 1.6rem;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    
-    #Price a {
-        font-size: 1.3rem;
-        padding: 7px;
-        border: 0.5px solid white;
-        border-radius: 20px;
-    }
+  footer {
+    display: none;
+  }
 
-    footer {
-        display: none;
-    }
+  .nav {
+    width: 95%;
+  }
+
+  .Case {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .Lcont {
+    display: block;
+  }
+
+  .Icont > img {
+    width: 100%;
+  }
+
+  .Block {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .CPrice {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .Vers {
+    padding: 0 15px;
+  }
+
+  .Cmoney, .CPColor {
+    padding: 0 26px;
+  }
 }

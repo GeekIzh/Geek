@@ -1,44 +1,183 @@
 <!DOCTYPE html>
+
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="icon" href="assets/G.png">
-    <title>Geek</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="assets/G.png">
+  <title>Geek</title>
 </head>
+
 <body>
+  <div class="nav">
     <img id="Geek" src="assets/Geek.png" alt="">
-    <img id="Work" src="assets/work.png" alt="">
-    <img class="mobwork" src="assets/work1.png" alt="">
-    <img class="mobwork" src="assets/work2.png" alt="">
-    <div id="Price">
-        <p>Список имеющихся товаров</p>
-        <a href="https://drive.google.com/file/d/1IxP-ZCn6gIza8M5u0ga0ZQgYoTkoiPY2/view" target="_blank">Просмотр</a>
+    <input type="radio" id="Glav" name="nav" checked>
+    <input type="radio" id="Tovar" name="nav">
+    <input type="radio" id="Yslugi" name="nav">
+    <div class="label">
+      <label for="Glav" class="LGlav">Главная</label>
+      <label for="Tovar" class="LTov">Товары</label>
+      <label for="Yslugi" class="LYs">Услуги ремонта</label>
     </div>
-    <footer>
-        <div class="cont1">
-            <div id="Adres">
-                <p>Адрес:</p>
-                <p>г. Ижевск, ул. Красноармейская, 127</p>
-                <p>2-ой этаж, 1-ый торговый зал</p>
+    <div class="SGlav">
+      <img id="Work" src="assets/work.png" alt="">
+      <img class="mobwork" src="assets/work1.png" alt="">
+      <img class="mobwork" src="assets/work2.png" alt="">
+    </div>
+    <div class="STov">
+      <div class="TCont">
+        <div class="Case">
+          <h1>Силиконовый кейс для iPhone</h1>
+          <input type="radio" name="gh" id="red" checked>
+          <input type="radio" name="gh" id="black">
+          <input type="radio" name="gh" id="white">
+          <input type="radio" name="gh" id="Tblue">
+          <input type="radio" name="gh" id="Psand">
+          <input type="radio" name="gh" id="Bezeviy">
+          <input type="radio" name="gh" id="Mgorizont">
+          <input type="radio" name="gh" id="Tlavanda">
+          <input type="radio" name="gh" id="Snecktarin">
+          <input type="radio" name="gh" id="Tocean">
+          <input type="radio" name="gh" id="Limon">
+          <input type="radio" name="gh" id="Rkarkade">
+          <input type="radio" name="gh" id="Nmiata">
+          <input type="radio" name="gh" id="Spapai">
+          <input type="radio" name="gh" id="Gblue">
+          <input type="radio" name="gh" id="Kanar">
+          <input type="radio" name="gh" id="Tfyks">
+          <input type="radio" name="gh" id="Bsymerk">
+          <div class="Icont">
+            <!--Картинки чехлов-->
+            <img class="Ir" src="/assets/Чехлы/Red.jpg" alt="">
+            <img src="/assets/Чехлы/Black.jpg" alt="">
+            <img src="/assets/Чехлы/White.jpg" alt="">
+            <img src="/assets/Чехлы/Temno blue.jpg" alt="">
+            <img src="/assets/Чехлы/Pink sand.jpg" alt="">
+            <img src="/assets/Чехлы/Bezeviy.jpg" alt="">
+            <img src="/assets/Чехлы/Morskoy gorizont.jpg" alt="">
+            <img src="/assets/Чехлы/Temno lavanda.jpg" alt="">
+            <img src="/assets/Чехлы/Spelyi necktarin.jpg" alt="">
+            <img src="/assets/Чехлы/Tixiy ocean.jpg" alt="">
+            <img src="/assets/Чехлы/Limon.jpg" alt="">
+            <img src="/assets/Чехлы/Red karkade.jpg" alt="">
+            <img src="/assets/Чехлы/Neznay miata.jpg" alt="">
+            <img src="/assets/Чехлы/Svez papaia.jpg" alt="">
+            <img src="/assets/Чехлы/Golland blue.jpg" alt="">
+            <img src="/assets/Чехлы/Kanareechniy.jpg" alt="">
+            <img src="/assets/Чехлы/Temno fyksia.jpg" alt="">
+            <img src="/assets/Чехлы/Blue symerki.jpg" alt="">
+          </div>
+          <div class="Lcont">
+            <div>
+              <div class="Block">
+                <label class="CColor Red" for="red"></label>
+                <label class="CColor Black" for="black"></label>
+                <label class="CColor White" for="white"></label>
+                <label class="CColor Tblue" for="Tblue"></label>
+                <label class="CColor Psand" for="Psand"></label>
+              </div>
+              <div class="Block">
+                <label class="CColor Bezev" for="Bezeviy"></label>
+                <label class="CColor Mgor" for="Mgorizont"></label>
+                <label class="CColor Tlavan" for="Tlavanda"></label>
+                <label class="CColor Snectar" for="Snecktarin"></label>
+                <label class="CColor Tocean" for="Tocean"></label>
+              </div>
+              <div class="Block">
+                <label class="CColor Limon" for="Limon"></label>
+                <label class="CColor Rkarkad" for="Rkarkade"></label>
+                <label class="CColor Nmiata" for="Nmiata"></label>
+                <label class="CColor Spapai" for="Spapai"></label>
+                <label class="CColor Gblue" for="Gblue"></label>
+              </div>
+              <div class="Block">
+                <label class="CColor Kanar" for="Kanar"></label>
+                <label class="CColor Tfyks" for="Tfyks"></label>
+                <label class="CColor Bsymerk" for="Bsymerk"></label>
+              </div>
             </div>
-            <div id="TimeWork">
-                <p>Время работы:</p>
-                <p>10:00-19:00</p>
+            <div class="CPrice">
+              <div class="CPcolor-cont">
+                <span class="Color-Vol">Цвет:</span>
+                <label for="red" class="CPColor CRed">Красный</label>
+                <label for="black" class="CPColor CBlack">Чёрный</label>
+                <label for="white" class="CPColor CWhite">Белый</label>
+                <label for="Tblue" class="CPColor CTblue">Тёмно-синий</label>
+                <label for="Psand" class="CPColor CPsand">«Розовый
+                  песок»</label>
+                <label for="Bezeviy" class="CPColor CBezeviy">Бежевый</label>
+                <label for="Mgorizont" class="CPColor CMgorizont">«Морской
+                  горизонт»</label>
+                <label for="Tlavanda" class="CPColor CTlavanda">«Тёмная
+                  лаванда»</label>
+                <label for="Snecktarin" class="CPColor CSnecktarin">«Спелый
+                  нектарин»</label>
+                <label for="Tocean" class="CPColor CTocean">«Тихий
+                  океан»</label>
+                <label for="Limon" class="CPColor CLimon">«Лимонный
+                  крем»</label>
+                <label for="Rkarkade" class="CPColor CRkarkade">«Красный
+                  каркаде»</label>
+                <label for="Nmiata" class="CPColor CNmiata">«Нежная
+                  мята»</label>
+                <label for="Spapai" class="CPColor CSpapai">«Свежая
+                  папайя»</label>
+                <label for="Gblue" class="CPColor CGblue">«Голландский
+                  синий»</label>
+                <label for="Kanar" class="CPColor CKanar">Канареечный</label>
+                <label for="Tfyks" class="CPColor CTfyks">«Тёмная
+                  фуксия»</label>
+                <label for="Bsymerk" class="CPColor CBsymerk">«Синие
+                  сумерки»</label>
+              </div>
+              <input type="radio" name="Cprice" id="SE-8" checked>
+              <input type="radio" name="Cprice" id="X-XS">
+              <div class="CPcont">
+                <span class="Model">Модель:</span>
+                <div>
+                  <label class="Vers VSE" for="SE-8">SE - 8 Plus</label>
+                  <label class="Vers VX" for="X-XS">X/XR/XS/XS max</label>
+                </div>
+              </div>
+              <div class="CPMoney">
+                <span>Цена: <span class="Cmoney SE-8">300</span><span
+                        class="Cmoney X-XS">400</span> рублей</span>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="cont2">
-            <div id="message">
-                <img src="assets/message.png" alt="">
-                <p>8-950-828-52-50</p>
-            </div>
-            <div id="vk-group">
-                <p>Группа:</p>
-                    <img src="assets/vk-group.png" alt="">
-                    <a href="https://vk.com/geek_18" target="_blank">ВКонтакте</a>
-            </div>
-        </div>
-    </footer>
+      </div>
+    </div>
+    <div class="SYs">
+      <p>Раздел с услугами в разработке</p>
+    </div>
+  </div>
+  <footer>
+    <div class="cont1">
+      <div id="Adres">
+        <p>Адрес:</p>
+        <p>г. Ижевск, ул. Красноармейская, 127</p>
+        <p>2-ой этаж, 1-ый торговый зал</p>
+      </div>
+      <div id="TimeWork">
+        <p>Время работы:</p>
+        <p>10:00-19:00</p>
+      </div>
+    </div>
+    <div class="cont2">
+      <div id="message">
+        <img src="assets/message.png" alt="">
+        <p>8-950-828-52-50</p>
+      </div>
+      <div id="vk-group">
+        <p>Группа:</p>
+        <img src="assets/vk-group.png" alt="">
+        <a href="https://vk.com/geek_18" target="_blank">ВКонтакте</a>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
