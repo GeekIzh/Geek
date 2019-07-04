@@ -120,9 +120,10 @@ a {
 }
 
 .Icont > img {
-  width: 452px;
+  max-width: 452px;
   margin-bottom: -10px;
   float: left;
+  max-height: 452px;
 }
 
 /* Слайдер чехлов*/
