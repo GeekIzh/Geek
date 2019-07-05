@@ -594,7 +594,7 @@ footer {
 @media (max-width: 768px) {
   #Geek {
     margin-top: 0;
-    width: 90%;
+    width: 95%;
     right: 0;
     left: unset;
   }
@@ -666,6 +666,7 @@ footer {
     top: 0;
     left: 0;
     font-size: 40px;
+    z-index: 1;
   }
 
   #CheckOpen:checked ~ .label {
@@ -673,6 +674,7 @@ footer {
     width: 100%;
     height: 100vh;
     background-color: rgb(43, 42, 40);
+    z-index: 2;
   }
 
   .label > label {
