@@ -638,4 +638,9 @@ footer {
   .Cmoney, .CPColor {
     padding: 0 26px;
   }
+
+  .TCont {
+    margin: 0 auto;
+    max-width: 350px;
+  }
 }
