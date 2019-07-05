@@ -690,4 +690,8 @@ footer {
     width: 20px;
     margin: 0 auto;
   }
+
+  .SGlav, .STov, .SYs {
+    padding: 80px 0;
+  }
 }
