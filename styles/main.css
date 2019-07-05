@@ -642,5 +642,6 @@ footer {
   .TCont {
     margin: 0 auto;
     max-width: 350px;
+    padding: 0;
   }
 }
